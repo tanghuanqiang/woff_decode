@@ -20,5 +20,5 @@ for i in range(len(code)):
         dic[content[j]] = result[j]
     code_file.close()
     words_file.close()
-    break
+
 print(dic)
