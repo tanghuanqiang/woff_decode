@@ -20,5 +20,6 @@ for i in range(len(code)):
         dic[content[j][:-4]] = result[j]
     code_file.close()
     words_file.close()
-
-print(dic)
+dic_json = json.dumps(dic)
+with open('dic_json.json','w') as f:
+    f.write(dic_json)
