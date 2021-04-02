@@ -31,6 +31,7 @@ for num in order:
 利用百度智能云手写字体识别接口进行识别，但因为免费额度一天50次，如果每次只检测一个汉字，不仅浪费并且效率低下。
 ### 2.1
 把单个字体的按照一定顺序合并（例子中有600+个汉字所以分为14个汉字一组比较合适，大于14时图片过长接口不允许）并保存在result下
+
 [源码](https://github.com/tanghuanqiang/woff_decode/blob/main/Paste.py)
 ```python
 from PIL import Image
