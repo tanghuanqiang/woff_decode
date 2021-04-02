@@ -83,7 +83,7 @@ while(files!=[]):
 [源码](https://github.com/tanghuanqiang/woff_decode/blob/main/self_ocr.py)
 ### 3
 通过文字识别的结果和相应编码匹配，保存为json文件
-[源码]（https://github.com/tanghuanqiang/woff_decode/blob/main/save_json.py）
+[源码](https://github.com/tanghuanqiang/woff_decode/blob/main/save_json.py)
 ```python
 import os
 import re
