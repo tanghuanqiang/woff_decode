@@ -17,7 +17,7 @@ for i in range(len(code)):
     words_file = open(words[i],'r')
     result = words_file.read()
     for j in range(len(content)):
-        dic[content[j]] = result[j]
+        dic[content[j][:-4]] = result[j]
     code_file.close()
     words_file.close()
 
