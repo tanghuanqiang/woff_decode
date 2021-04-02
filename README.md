@@ -2,7 +2,7 @@
 a application used to decode woff file into json-form word
 ## version：1.0
 针对的是固定woff文件中相应编码对应的文字（如大众点评）
-[字体](https://github.com/tanghuanqiang/woff_decode/123.woff)
+[字体](https://github.com/tanghuanqiang/woff_decode/blob/main/123.woff)
 ### 1
 woff字体在文件中以点的方式存在，所以我们可以把woff文件中的字体利用plt将字体保存为图片
 ```python
@@ -31,7 +31,7 @@ for num in order:
 利用百度智能云手写字体识别接口进行识别，但因为免费额度一天50次，如果每次只检测一个汉字，不仅浪费并且效率低下。
 ### 2.1
 把单个字体的按照一定顺序合并（例子中有600+个汉字所以分为14个汉字一组比较合适，大于14时图片过长接口不允许）并保存在result下
-[源码](https://github.com/tanghuanqiang/woff_decode/Paste.py)
+[源码](https://github.com/tanghuanqiang/woff_decode/blob/main/Paste.py)
 ```python
 from PIL import Image
 import os
@@ -79,7 +79,7 @@ while(files!=[]):
 ### 2.2
 利用百度智能云接口进行文字识别
 [百度智能云官网quickstart教程]（https://cloud.baidu.com/doc/OCR/s/dk3iqnq51）
-[源码]()
+[源码](https://github.com/tanghuanqiang/woff_decode/blob/main/self_ocr.py)
 ### 3
 通过文字识别的结果和相应编码匹配，保存为json文件
 ```python
